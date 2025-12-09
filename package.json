@@ -1,0 +1,41 @@
+{
+  "name": "ecosystem-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for ecosystem intelligence - research packages, find alternatives, check security",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "ecosystem-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "inspect": "npx @anthropic-ai/mcp-inspector tsx src/index.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "semver": "^7.6.3",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@types/semver": "^7.5.8",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "claude",
+    "ecosystem",
+    "package-intelligence",
+    "npm",
+    "security"
+  ],
+  "author": "Lucas Cooper-Bey",
+  "license": "MIT"
+}
