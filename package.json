@@ -14,7 +14,7 @@
     "inspect": "npx @anthropic-ai/mcp-inspector tsx src/index.ts"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.52.0",
+    "@anthropic-ai/sdk": "^0.70.1",
     "@modelcontextprotocol/sdk": "^1.0.0",
     "semver": "^7.6.3",
     "zod": "^3.24.1"
